@@ -69,7 +69,7 @@
     MICHIMP INTEGRATION
     -----------------------------*/
     $('#mc-form').ajaxChimp({
-        url: 'https://quomodosoft.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
+        url: 'https://hotmail.us20.list-manage.com/subscribe/post?u=08d8233f5ef4923673f8b29a3&amp;id=658c070422', //Set Your Mailchamp URL
         callback: function (resp) {
             if (resp.result === 'success') {
                 $('.subscrie-form, .join-button').fadeOut();

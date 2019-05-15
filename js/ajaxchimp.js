@@ -30,15 +30,15 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
     $.ajaxChimp = {
         responses: {
-            'We have sent you a confirmation email'                                             : 0,
-            'Please enter a value'                                                              : 1,
+            'Obrigado por se inscrever'                                                         : 0,
+            'Por favor, entre com seu e-mail'                                                   : 1,
             'An email address must contain a single @'                                          : 2,
             'The domain portion of the email address is invalid (the portion after the @: )'    : 3,
             'The username portion of the email address is invalid (the portion before the @: )' : 4,
             'This email address looks fake or invalid. Please enter a real email address'       : 5
         },
         translations: {
-            'en': null
+            'pt-BR': null
         },
         init: function (selector, options) {
             $(selector).ajaxChimp(options);
@@ -65,7 +65,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 var msg;
                 function successCallback(resp) {
                     if (resp.result === 'success') {
-                        msg = 'We have sent you a confirmation email';
+                        msg = 'Obrigado por se inscrever';
                         label.removeClass('error').addClass('valid');
                         email.removeClass('error').addClass('valid');
                     } else {
