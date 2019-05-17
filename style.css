@@ -24,6 +24,7 @@ CSS INDEX
 21. Pagination
 22. pesquisa-Respond
 23. Form-Stype
+24. Research-area
 -----------------------------------------------------------------------------------*/
 
 /*-----------------
@@ -492,8 +493,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
 /*-- 10. Feature-Area --*/
 
 .feature-area {
-    color: #ffffff;
-    background-color: #d6d6d6;
+    color: #000000;
+    background-color: #e7e7e756;
     background-image: url('images/feature-bg.png');
     background-position: bottom -120px center;
     background-repeat: no-repeat;
@@ -502,7 +503,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
 }
 
 .feature-area .page-title .title {
-    color: #ffffff;
+    color: #000000;
 }
 
 .feature-area .mobile-image {
@@ -1286,25 +1287,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
 
 /*-- 22. pesquisa-Respond --*/
 
-.pesquisa-respond h4,
-.pesquisa-area .pesquisa-heading {
+.research-respond h4,
+.research-area .research-heading {
     font-size: 20px;
     margin-bottom: 40px;
     font-weight: 600;
     color: #434345;
 }
 
-.pesquisa-list,
-.pesquisa-list ul {
+.research-list,
+.research-list ul {
     list-style: none;
 }
 
-.pesquisa-list .pesquisa {
+.research-list .research {
     position: relative;
     padding-left: 130px;
 }
 
-.pesquisa-list .pesquisa .pesquisa-pic {
+.research-list .research .research-pic {
     width: 100px;
     height: 100px;
     border-radius: 3px;
@@ -1314,23 +1315,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
     overflow: hidden;
 }
 
-.pesquisa-list .pesquisa .pesquisa-content .pesquisa-header {
-    color: #434345
+.research-list .research .research-content .research-header {
+   
 }
 
-.pesquisa-list .pesquisa .pesquisa-content .pesquisa-header h4 {
+.research-list .research .research-content .research-header h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.pesquisa-list li li .pesquisa .pesquisa-pic {
+.research-list li li .research .research-pic {
     width: 80px;
     height: 80px;
 }
 
-.pesquisa-list li {
+.research-list li {
     margin-bottom: 30px;
+}
+
+.research-area {
+    height: 80%;
+    color: #000000;
+    background-color: #e7e7e756;
+}
+.research-area p {
+    color: #8790af;
+}
+.research-area .center-button {
+    position: center;
+    top: 12px;
+}
+.research-area .center-button a {
+    color: #ffffff;
+    padding: 10px 60px;
+    border-radius: 50px;
+    background-color: #ff7500;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.research-area .center-button a:hover {
+    background-color: rgb(255, 255, 255);;
+    color: #ff0000;
 }
 
 /*-- 23. Form-Stype --*/
@@ -1355,4 +1385,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
 
 .form-double .box.last {
     float: right;
+}
+
+/*-- 24. Research-area --*/
+
+.research-area {
+    height: 80%;
+    color: #000000;
+    background-color: #e7e7e756;
+}
+.research-area p {
+    color: #8790af;
+}
+.research-area .center-button {
+    position: center;
+    top: 12px;
+}
+.research-area .center-button a {
+    color: #ffffff;
+    padding: 10px 60px;
+    border-radius: 50px;
+    background-color: #ff7500;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.research-area .center-button a:hover {
+    background-color: rgb(255, 255, 255);;
+    color: #ff0000;
 }
