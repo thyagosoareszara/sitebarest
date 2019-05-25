@@ -17,7 +17,7 @@ if (isset($_POST['acao']) && ($_POST['acao'] == 'save')){
     $InsertPesquisa->execute();
 
     if (isset($_POST['email'])){ 
-        $InsertNew = $pdo->prepare("INSERT INTO tbnnewsletter (nome, email,data_cadastro ) VALUES('$nome','$email', '$data_cadastro')");    
+        $InsertNew = $pdo->prepare("INSERT INTO tbnewsletter (nome, email,data_cadastro ) VALUES('$nome','$email', '$data_cadastro')");    
 
         $InsertNew->execute();
     
