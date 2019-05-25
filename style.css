@@ -1372,10 +1372,6 @@ input:-webkit-autofill:focus {
     overflow: hidden;
 }
 
-.research-list .research .research-content .research-header {
-   
-}
-
 .research-list .research .research-content .research-header h4 {
     font-size: 18px;
     font-weight: 600;
@@ -1443,6 +1439,11 @@ input:-webkit-autofill:focus {
 
 .form-double .box.last {
     float: right;
+}
+
+.form-check-label {
+    font-weight: 500;
+    padding: 0 10px 0 0;
 }
 
 /*-- 24. Research-area --*/
