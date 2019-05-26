@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="barest.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
@@ -30,11 +30,12 @@
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".mainmenu-area">
+<body data-spy="scroll" data-target=".mainmenu-area" style="overflow-x: hidden">
     <!-- Preloader-content -->
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
     </div>
+
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -337,7 +338,7 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <span>Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved</i></span>
+                            </script> barest</i></span>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <div class="space-30 hidden visible-xs"></div>
                     </div>
@@ -370,6 +371,19 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140812351-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140812351-1');
+    </script>
+
 
 </body>
 

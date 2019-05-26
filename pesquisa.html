@@ -3,31 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="W2E">
+    <meta name="author" content="barest Brasil Dev ">
     <meta name="description" content="Aplicação para bares, restaurantes, pubs e users">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Pesquisa - barest</title>
-    <!-- Place favicon.ico in the root directory -->
+    <title>Pesquisa - barest Brasil</title>
 
-    <link rel="shortcut icon" type="image/ico" href="images/icon.ico" />
     <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/bootstrap.umin.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/linearicons.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="barest.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/barest.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+                    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
 </head>
 
 <body class="single-post" data-spy="scroll" data-target=".mainmenu-area">
@@ -44,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Logo"></a>
             </div>
         </div>
     </nav>
@@ -56,7 +54,7 @@
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Pesquisa</h1>
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                     </ul>
                     <div>
                         <h3>Sua opnião é muito importante para conhecermos mais sua expectativas em relação ao nosso
@@ -76,7 +74,7 @@
                 <div id="pesquisa" class="pesquisa-area">
                     <div class="pesquisa-respond">
                         <h4> </h4>
-                        <form action="cadPesquisa.php" class="pesquisa-form" method="POST">
+                        <form action="/cadPesquisa.php" class="pesquisa-form" method="POST">
                             <input type="hidden" name="acao" value="save">
                             <div class="form-row">
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:15px">
@@ -138,7 +136,7 @@
                                     <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
                                     <span class="form-check-label"> mais de 3 por mês </span>
                                 </div>
-                                
+
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <label for="nome" style="display: block">Como você faz compras pela
                                         internet?</label>
@@ -153,7 +151,7 @@
                                     <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
                                     <span class="form-check-label"> nenhum </span>
                                 </div>
-                               
+
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <label for="nome" style="display: block">Qual a vantagem de utilizar o celular para
                                         realizar compras?</label>
@@ -166,7 +164,7 @@
                                     <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
                                     <span class="form-check-label"> nenhum </span>
                                 </div>
-                             
+
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <label for="nome" style="display: block">Do bar/restaurante para o celular, o que
                                         seria legal?</label>
@@ -177,12 +175,14 @@
                                     <input class="form-check-input input-radio" type="checkbox" name="proximidade"
                                         value="ambos">
                                     <span class="form-check-label"> consultar e pagar conta </span><br>
-                                    <input class="form-check-input" type="checkbox" name="proximidade" value="Indiferente">
+                                    <input class="form-check-input" type="checkbox" name="proximidade"
+                                        value="Indiferente">
                                     <span class="form-check-label"> atrações/eventos </span>
-                                    <input class="form-check-input" type="checkbox" name="proximidade" value="Indiferente">
+                                    <input class="form-check-input" type="checkbox" name="proximidade"
+                                        value="Indiferente">
                                     <span class="form-check-label"> fotos estabelicimento </span>
                                 </div>
-                               
+
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <label for="nome" style="display: block">Você utilizaria um app que ajudasse a
                                         melhorar sua experiência num bar ou restaurante?</label>
@@ -225,20 +225,31 @@
     </div>
     <!-- Footer-Bootom-End -->
     </footer>
-    <!-- Footer-Area-End -->
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/jquery-ui.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/vendor/jquery-ui.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/ajaxchimp.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/contact-form.js"></script>
+    <script src="/js/ajaxchimp.js"></script>
+    <script src="/js/scrollUp.min.js"></script>
+    <script src="/js/magnific-popup.min.js"></script>
+    <script src="/js/wow.min.js"></script>
     <!--Main-active-JS-->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140812351-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140812351-1');
+    </script>
+
 </body>
 
 </html>
