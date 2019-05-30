@@ -273,6 +273,7 @@ input:-webkit-autofill:focus {
     z-index: -1;
 }
 
+
 .black-color {
     color: #000000;
 }
@@ -423,6 +424,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     height: 50px;
 }
 
+<<<<<<< HEAD
 .mainmenu-reduz .brand-reduz {
     height: auto;
     padding: 0 15px;
@@ -484,7 +486,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
-
 
 #about_page .page-title img {
     height: 60px;
@@ -591,6 +592,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 .feature-area .title {
     color: #8790af;
 }
+
 
 .feature-area .mobile-image {
     margin-bottom: -142px;
@@ -1465,7 +1467,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     background-color: #e7e7e756;
 }
 .research-area p {
+
     color: #2c2b2b;
+
 }
 .research-area .center-button {
     position: center;
@@ -1517,4 +1521,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     font-weight: 500;
     padding: 0 10px 0 0;
 }
-
