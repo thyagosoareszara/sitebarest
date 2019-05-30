@@ -24,10 +24,6 @@ CSS INDEX
 21. Pagination
 22. pesquisa-Respond
 23. Form-Stype
-<<<<<<< HEAD
-=======
-24. Research-area
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 -----------------------------------------------------------------------------------*/
 
 /*-----------------
@@ -277,7 +273,6 @@ input:-webkit-autofill:focus {
     z-index: -1;
 }
 
-<<<<<<< HEAD
 
 .black-color {
     color: #000000;
@@ -287,8 +282,6 @@ input:-webkit-autofill:focus {
     color: #2c2b2b
 }
 
-=======
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 .dark-color {
     color: #434345
 }
@@ -331,24 +324,11 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+1,ff4242+45,ffa154+61,ff7500+100&0.95+0,0.95+100 */
 background: -moz-linear-gradient(left,  rgba(255,0,0,0.95) 0%, rgba(255,0,0,0.95) 1%, rgba(255,66,66,0.95) 45%, rgba(255,161,84,0.95) 61%, rgba(255,117,0,0.95) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', endColorstr='#f2ff7500',GradientType=1 ); /* IE6-9 */
-=======
-    background: rgb(255, 0, 0);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff7500', GradientType=1);
-    /* IE6-9 */
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
     z-index: -1;
     opacity: 0;
     -webkit-transition: 0.3s;
@@ -361,7 +341,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     top: 0;
 }
 
-<<<<<<< HEAD
 .mainmenu-reduz:before {
     content: '';
     position: absolute;
@@ -382,8 +361,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     transition: 0.5s;
 }
 
-=======
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 .mainmenu-area.affix:before {
     opacity: 1;
 }
@@ -448,7 +425,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 .mainmenu-reduz .brand-reduz {
     height: auto;
     padding: 0 15px;
@@ -487,8 +463,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 }
 
 
-=======
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 /*-- 6. Page-Title --*/
 
 .page-title .title {
@@ -612,7 +586,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     margin-bottom: 142px;
 }
 
-<<<<<<< HEAD
 .feature-area .page-title {
     color: #000000;
 }
@@ -620,17 +593,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     color: #8790af;
 }
 
-=======
-.feature-area .page-title .title {
-    color: #000000;
-}
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 
 .feature-area .mobile-image {
     margin-bottom: -142px;
 }
 
-<<<<<<< HEAD
 #features_page h4 {
     color: #000000;
 }
@@ -639,8 +606,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     color: #2c2b2b;
 }
 
-=======
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 /*-- 11. Service-Box --*/
 
 .service-box {
@@ -1502,13 +1467,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     background-color: #e7e7e756;
 }
 .research-area p {
-<<<<<<< HEAD
 
     color: #2c2b2b;
 
-=======
-    color: #8790af;
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 }
 .research-area .center-button {
     position: center;
@@ -1560,37 +1521,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     font-weight: 500;
     padding: 0 10px 0 0;
 }
-<<<<<<< HEAD
-=======
-
-/*-- 24. Research-area --*/
-
-.research-area {
-    height: 80%;
-    color: #000000;
-    background-color: #e7e7e756;
-}
-.research-area p {
-    color: #8790af;
-}
-.research-area .center-button {
-    position: center;
-    top: 12px;
-}
-.research-area .center-button a {
-    color: #ffffff;
-    padding: 10px 60px;
-    border-radius: 50px;
-    background-color: #ff7500;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.research-area .center-button a:hover {
-    background-color: rgb(255, 255, 255);;
-    color: #ff0000;
-}
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
