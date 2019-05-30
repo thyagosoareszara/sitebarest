@@ -24,7 +24,6 @@ CSS INDEX
 21. Pagination
 22. pesquisa-Respond
 23. Form-Stype
-24. Research-area
 -----------------------------------------------------------------------------------*/
 
 /*-----------------
@@ -274,6 +273,14 @@ input:-webkit-autofill:focus {
     z-index: -1;
 }
 
+.black-color {
+    color: #000000;
+}
+
+.black-light-color {
+    color: #2c2b2b
+}
+
 .dark-color {
     color: #434345
 }
@@ -316,16 +323,11 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(255, 0, 0);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 0, 0, 1) 1%, rgba(255, 66, 66, 1) 45%, rgba(255, 161, 84, 1) 61%, rgba(255, 117, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff7500', GradientType=1);
-    /* IE6-9 */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+1,ff4242+45,ffa154+61,ff7500+100&0.95+0,0.95+100 */
+background: -moz-linear-gradient(left,  rgba(255,0,0,0.95) 0%, rgba(255,0,0,0.95) 1%, rgba(255,66,66,0.95) 45%, rgba(255,161,84,0.95) 61%, rgba(255,117,0,0.95) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', endColorstr='#f2ff7500',GradientType=1 ); /* IE6-9 */
     z-index: -1;
     opacity: 0;
     -webkit-transition: 0.3s;
@@ -336,6 +338,26 @@ input:-webkit-autofill:focus {
 .mainmenu-area.affix {
     position: fixed;
     top: 0;
+}
+
+.mainmenu-reduz:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80% !important;
+    line-height: 80% !important;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+1,ff4242+45,ffa154+61,ff7500+100&0.95+0,0.95+100 */
+background: -moz-linear-gradient(left,  rgba(255,0,0,0.95) 0%, rgba(255,0,0,0.95) 1%, rgba(255,66,66,0.95) 45%, rgba(255,161,84,0.95) 61%, rgba(255,117,0,0.95) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', endColorstr='#f2ff7500',GradientType=1 ); /* IE6-9 */
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .mainmenu-area.affix:before {
@@ -401,6 +423,44 @@ input:-webkit-autofill:focus {
     height: 50px;
 }
 
+.mainmenu-reduz .brand-reduz {
+    height: auto;
+    padding: 0 15px;
+
+}
+
+.mainmenu-reduz .brand-reduz img{
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    
+}
+
+.mainmenu-reduz ul.nav.navbar-nav li a {
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 2px;
+    border-bottom: 1.5px solid transparent;
+    margin: 1.5px 40px;
+    
+}
+
+
+.mainmenu-reduz .right-button a {
+    color: #ffffff;
+    padding: 3px 28px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
 /*-- 6. Page-Title --*/
 
 .page-title .title {
@@ -424,6 +484,7 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
+
 
 #about_page .page-title img {
     height: 60px;
@@ -457,7 +518,7 @@ input:-webkit-autofill:focus {
     background: url('images/woman-mobile.png') no-repeat scroll center bottom / cover;
     padding-top: 26vh;
     color: #ffffff;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     padding: 180px 0 120px;
 
 }
@@ -524,12 +585,23 @@ input:-webkit-autofill:focus {
     margin-bottom: 142px;
 }
 
-.feature-area .page-title .title {
+.feature-area .page-title {
     color: #000000;
+}
+.feature-area .title {
+    color: #8790af;
 }
 
 .feature-area .mobile-image {
     margin-bottom: -142px;
+}
+
+#features_page h4 {
+    color: #000000;
+}
+
+#features_page p {
+    color: #2c2b2b;
 }
 
 /*-- 11. Service-Box --*/
@@ -1372,13 +1444,6 @@ input:-webkit-autofill:focus {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-.research-list .research .research-content .research-header {
-    color: #434345
-}
-
-=======
->>>>>>> 795946f23f86ad7730010d3ea3b1d2fae6e624ef
 .research-list .research .research-content .research-header h4 {
     font-size: 18px;
     font-weight: 600;
@@ -1400,7 +1465,7 @@ input:-webkit-autofill:focus {
     background-color: #e7e7e756;
 }
 .research-area p {
-    color: #8790af;
+    color: #2c2b2b;
 }
 .research-area .center-button {
     position: center;
@@ -1453,33 +1518,3 @@ input:-webkit-autofill:focus {
     padding: 0 10px 0 0;
 }
 
-/*-- 24. Research-area --*/
-
-.research-area {
-    height: 80%;
-    color: #000000;
-    background-color: #e7e7e756;
-}
-.research-area p {
-    color: #8790af;
-}
-.research-area .center-button {
-    position: center;
-    top: 12px;
-}
-.research-area .center-button a {
-    color: #ffffff;
-    padding: 10px 60px;
-    border-radius: 50px;
-    background-color: #ff7500;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.research-area .center-button a:hover {
-    background-color: rgb(255, 255, 255);;
-    color: #ff0000;
-}

@@ -3,31 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="W2E">
+    <meta name="author" content="barest Brasil Dev ">
     <meta name="description" content="Aplicação para bares, restaurantes, pubs e users">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Pesquisa - barest</title>
-    <!-- Place favicon.ico in the root directory -->
+    <title>Pesquisa - barest Brasil</title>
 
-    <link rel="shortcut icon" type="image/ico" href="images/icon.ico"/>
     <!-- Plugin-CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/bootstrap.umin.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/linearicons.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/barest.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+                    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
 </head>
 
 <body class="single-post" data-spy="scroll" data-target=".mainmenu-area">
@@ -36,7 +34,7 @@
         <span><i class="lnr lnr-sun"></i></span>
     </div>
     <!-- MainMenu-Area -->
-    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+    <nav class="mainmenu-area mainmenu-reduz" data-spy="affix" data-offset-top="200">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
@@ -44,12 +42,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand brand-reduz site-title" href="index.html"><img src="/images/logo.png" alt="Logo"></a>
             </div>
-           
-                   
-                </div>
-            </div>
+            <div class="collapse navbar-collapse" id="primary_menu">
+                <ul class="nav navbar-nav mainmenu">
+                    <li class="active"><a href="index.html#home_page">Início</a></li>
+                    <li><a href="index.html#contact_page">Contatos</a></li>
+                </ul>
         </div>
     </nav>
     <!-- MainMenu-Area-End -->
@@ -59,82 +58,218 @@
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="white-color">Pesquisa</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
+                   
                     <div>
-                        <h3>Sua opnião é muito importante para conhecermos mais sua expectativas em relação ao nosso serviço.</h3>
+                        <h3>Sua opnião é muito importante para conhecermos mais sua expectativas em relação ao nosso
+                            serviço.</h3>
                         <div class="space-30"></div>
-                        <a href="#research" class="bttn-pesq wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-arrow-down"></i>Fazer Pesquisa</a>
+                        <a href="#comecoPesquisa" class="bttn-pesq wow fadeInUp" data-wow-delay="0.8s"><i
+                                class="lnr lnr-arrow-down"></i>Fazer Pesquisa</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                   
 
+    <div class="space-10" id="comecoPesquisa"></div>
 
-            
-                    <div id="research" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="pesquisa" class="pesquisa-area">
+                    <div class="pesquisa-respond">
+                        <h4> </h4>
+                        <form action="/cadPesquisa.php" class="pesquisa-form" method="POST">
+                            <input type="hidden" name="acao" value="save">
+                            <div class="form-row">
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:15px">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" class="form-control" />
+                                </div>
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:15px">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="Email" class="form-control" />
+                                </div>
+                                <div class="form-check col-md-3 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Sexo:</label>
+                                    <input class="form-check-input" type="radio" name="genero" value="femino">
+                                    <span class="form-check-label"> Feminino </span>
+                                    <input class="form-check-input" type="radio" name="genero" value="femino">
+                                    <span class="form-check-label"> Masculino </span>
+                                </div>
+                                <div class="form-check col-md-5 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Faixa de idade:</label>
+                                    <input class="form-check-input" type="radio" name="idade" value="18_24">
+                                    <span class="form-check-label"> 18 a 24 </span>
+                                    <input class="form-check-input" type="radio" name="idade" value="25_30">
+                                    <span class="form-check-label"> 25 a 30 </span>
+                                    <input class="form-check-input" type="radio" name="idade" value="31_35">
+                                    <span class="form-check-label"> 31 a 35 </span>
+                                    <input class="form-check-input" type="radio" name="idade" value="mais_35">
+                                    <span class="form-check-label"> mais de 35 </span>
+                                </div>
+                                <div class="form-input col-md-4 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Relacionamento:</label>
+                                    <input class="form-check-input" type="radio" name="relacionamento" value="solteiro">
+                                    <span class="form-check-label"> Solteiro </span>
+                                    <input class="form-check-input" type="radio" name="relacionamento" value="casado">
+                                    <span class="form-check-label"> Casado </span>
+                                    <input class="form-check-input" type="radio" name="relacionamento" value="outros">
+                                    <span class="form-check-label"> Outros </span>
+                                </div>
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px;">
+                                    <label for="nome" style="display: block">Qual os os bares/restaurantes você costuma
+                                        frequentar?</label>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="casa">
+                                    <span class="form-check-label"> Próximo de casa </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="trabalho">
+                                    <span class="form-check-label"> Próximo do trabalho </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="ambos">
+                                    <span class="form-check-label"> Ambos </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
+                                    <span class="form-check-label"> Indiferente </span>
+                                </div>
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Quantas vez em média você sai para bares e
+                                        restaurante por mês?</label>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
+                                    <span class="form-check-label"> 1 por mês </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
+                                    <span class="form-check-label"> 2 pos mês </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="3">
+                                    <span class="form-check-label"> 3 por mês </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
+                                    <span class="form-check-label"> mais de 3 por mês </span>
+                                </div>
 
-                        
-                               
-                        
-                        <div class="research-respond">
-                            <h4>        </h4>
-                            <form action="#" class="research-form">
-                                
-                              
-                                <div class="space-30"></div>
-                               
-                                <div class="space-30"></div>
-                                <button type="submit" class="bttn-default">ENVIAR</button>
-                            </form>
-                        </div>
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Como você faz compras pela
+                                        internet?</label>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="casa">
+                                    <span class="form-check-label"> celular </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="trabalho">
+                                    <span class="form-check-label"> tablet </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="ambos">
+                                    <span class="form-check-label"> computador </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
+                                    <span class="form-check-label"> ambos </span>
+                                    <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
+                                    <span class="form-check-label"> nenhum </span>
+                                </div>
+
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Qual a vantagem de utilizar o celular para
+                                        realizar compras?</label>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
+                                    <span class="form-check-label"> confiança </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
+                                    <span class="form-check-label"> praticidade </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="3">
+                                    <span class="form-check-label"> acessível </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
+                                    <span class="form-check-label"> nenhum </span>
+                                </div>
+
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Do bar/restaurante para o celular, o que
+                                        seria legal?</label>
+                                    <input class="form-check-input" type="checkbox" name="proximidade" value="casa">
+                                    <span class="form-check-label"> fazer pedido </span>
+                                    <input class="form-check-input" type="checkbox" name="proximidade" value="trabalho">
+                                    <span class="form-check-label"> consultar cardápio </span>
+                                    <input class="form-check-input input-radio" type="checkbox" name="proximidade"
+                                        value="ambos">
+                                    <span class="form-check-label"> consultar e pagar conta </span><br>
+                                    <input class="form-check-input" type="checkbox" name="proximidade"
+                                        value="Indiferente">
+                                    <span class="form-check-label"> atrações/eventos </span>
+                                    <input class="form-check-input" type="checkbox" name="proximidade"
+                                        value="Indiferente">
+                                    <span class="form-check-label"> fotos estabelicimento </span>
+                                </div>
+
+                                <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
+                                    <label for="nome" style="display: block">Você utilizaria um app que ajudasse a
+                                        melhorar sua experiência num bar ou restaurante?</label>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
+                                    <span class="form-check-label"> sim </span>
+                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
+                                    <span class="form-check-label"> não </span>
+
+                                </div>
+                            </div>
+                            <div class="space-30"></div>
+                            <button type="submit" class="bttn-default">ENVIAR</button>
+                            <div class="space-30"></div>
+                            <div class="space-30"></div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-   
-        <!-- Footer-Bootom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-5">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</span>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                    <div class="col-xs-12 col-md-7">
-                        <div class="footer-menu">
-                           
-                        </div>
+    <!-- Footer-Bootom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-5">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <span>Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved</span>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="footer-menu">
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer-Bootom-End -->
+    </div>
+    <!-- Footer-Bootom-End -->
     </footer>
-    <!-- Footer-Area-End -->
-    <!--Vendor-JS-->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/jquery-ui.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="/js/vendor/jquery-ui.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
     <!--Plugin-JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/contact-form.js"></script>
-    <script src="js/ajaxchimp.js"></script>
-    <script src="js/scrollUp.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/contact-form.js"></script>
+    <script src="/js/ajaxchimp.js"></script>
+    <script src="/js/scrollUp.min.js"></script>
+    <script src="/js/magnific-popup.min.js"></script>
+    <script src="/js/wow.min.js"></script>
     <!--Main-active-JS-->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140812351-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140812351-1');
+    </script>
+
+<script type="text/javascript">
+ var navbarCollapse = function() {
+    if ($(".mainmenu-area").offset().top > 100) {
+      $(".mainmenu-area").addClass("mainmenu-reduz");
+    } else {
+      $(".mainmenu-area").removeClass("mainmenu-reduz");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+  </script>
+
 </body>
 
 </html>

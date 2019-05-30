@@ -158,7 +158,7 @@
     }
     .mainmenu-area .navbar-toggle {
         border: 1px solid #ffffff;
-        border-radius: 1px;
+        border-radius: 5px;
     }
     .mainmenu-area .navbar-toggle .icon-bar {
         background-color: #ffffff;
@@ -179,7 +179,31 @@
     .mainmenu-area #primary_menu ul.nav.navbar-nav li.active a,
     .mainmenu-area #primary_menu ul.nav.navbar-nav li a:hover {
         background-color: #ffffff;
-        color: #5e88fc;
+        border-radius: 20px;
+        color: #ff0000;
+    }
+
+    .mainmenu-area .right-button {
+        position: relative;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        left: 3px;
+        text-align: center;
+        top: 0px;
+    }
+
+    .mainmenu-area .right-button a {
+        color: #ffffff;
+        padding: 5px 100px;
+        border-radius: 50px;
+        border-color: #ffffff;
+        border-style: solid;
+        background-color: #ff7500;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        font-size: 12px;
     }
     /*-- Home-Area --*/
     .home-area {
