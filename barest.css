@@ -88,6 +88,7 @@ h3 {
 
 html,
 body {
+    width: 100%;
     height: 100%
 }
 
@@ -338,6 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 
 .mainmenu-area.affix {
     position: fixed;
+    width: 100%;
     top: 0;
 }
 
@@ -347,8 +349,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
     left: 0;
     top: 0;
     width: 100%;
-    height: 80% !important;
-    line-height: 80% !important;
+    height: 80%;
+    line-height: 80%;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+1,ff4242+45,ffa154+61,ff7500+100&0.95+0,0.95+100 */
 background: -moz-linear-gradient(left,  rgba(255,0,0,0.95) 0%, rgba(255,0,0,0.95) 1%, rgba(255,66,66,0.95) 45%, rgba(255,161,84,0.95) 61%, rgba(255,117,0,0.95) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  rgba(255,0,0,0.95) 0%,rgba(255,0,0,0.95) 1%,rgba(255,66,66,0.95) 45%,rgba(255,161,84,0.95) 61%,rgba(255,117,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -423,6 +425,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 .mainmenu-area .navbar-brand img {
     height: 50px;
 }
+
+/* Format scroll down */
 
 .mainmenu-reduz .brand-reduz {
     height: auto;
@@ -1121,13 +1125,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff0000', e
 
 #scrollUp {
     right: 0;
-    bottom: 0;
-    height: 60px;
-    width: 60px;
+    bottom: 20px;
+    height: 40px;
+    width: 30px;
+    right: 16px;
     text-align: center;
     line-height: 60px;
     font-size: 30px;
-    color: #5e88fc;
+    color: #ff0000;
 }
 
 .preloader {
