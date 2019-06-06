@@ -43,14 +43,14 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand brand-reduz site-title" href="index.html"><img src="images/logo.png"
+                <a class="navbar-brand brand-reduz site-title" href="/"><img src="images/logo.png"
                         alt="Logo"></a>
 
             </div>
             <div class="collapse navbar-collapse" id="primary_menu">
                 <ul class="nav navbar-nav mainmenu">
-                    <li class="active"><a href="index.html#home_page">Início</a></li>
-                    <li><a href="index.html#contact_page">Contatos</a></li>
+                    <li class="active"><a href="/">Início</a></li>
+                    <li><a href="/#contact_page">Contatos</a></li>
                 </ul>
             </div>
     </nav>
@@ -83,7 +83,7 @@
                 <div id="pesquisa" class="pesquisa-area">
                     <div class="pesquisa-respond">
                         <h4> </h4>
-                        <form action="/cadPesquisa.php" class="pesquisa-form" method="POST">
+                        <form action="" id="form_pesquisa" class="pesquisa-form" method="POST">
                             <input type="hidden" name="acao" value="save">
                             <div class="form-row">
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:15px">
@@ -94,32 +94,32 @@
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:15px">
                                     <div class="label-box">2</div>
                                     <label for="email">Email</label>
-                                    <input type="email" name="Email" class="form-control" />
+                                    <input type="email" name="email" class="form-control" required/>
                                 </div>
                                 <div class="form-check col-md-3 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">3</div>
                                     <label for="nome" style="display: block">Sexo:</label>
-                                    <input class="form-check-input" type="radio" name="genero" value="femino">
+                                    <input class="form-check-input" type="radio" name="sexo" value="femino" required>
                                     <span class="form-check-label"> Feminino </span>
-                                    <input class="form-check-input" type="radio" name="genero" value="femino">
+                                    <input class="form-check-input" type="radio" name="sexo" value="femino">
                                     <span class="form-check-label"> Masculino </span>
                                 </div>
                                 <div class="form-check col-md-5 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">4</div>
                                     <label for="nome" style="display: block">Faixa de idade:</label>
-                                    <input class="form-check-input" type="radio" name="idade" value="18_24">
-                                    <span class="form-check-label"> 18 a 24 </span>
+                                    <input class="form-check-input" type="radio" name="idade" value="18_24" required>
+                                    <span class="form-check-label"> 18 à 24 </span>
                                     <input class="form-check-input" type="radio" name="idade" value="25_30">
-                                    <span class="form-check-label"> 25 a 30 </span>
+                                    <span class="form-check-label"> 25 à 30 </span>
                                     <input class="form-check-input" type="radio" name="idade" value="31_35">
-                                    <span class="form-check-label"> 31 a 35 </span>
+                                    <span class="form-check-label"> 31 à 35 </span>
                                     <input class="form-check-input" type="radio" name="idade" value="mais_35">
                                     <span class="form-check-label"> mais de 35 </span>
                                 </div>
                                 <div class="form-input col-md-4 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">5</div>
                                     <label for="nome" style="display: block">Relacionamento:</label>
-                                    <input class="form-check-input" type="radio" name="relacionamento" value="solteiro">
+                                    <input class="form-check-input" type="radio" name="relacionamento" value="solteiro" required>
                                     <span class="form-check-label"> Solteiro </span>
                                     <input class="form-check-input" type="radio" name="relacionamento" value="casado">
                                     <span class="form-check-label"> Casado </span>
@@ -128,9 +128,9 @@
                                 </div>
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px;">
                                     <div class="label-box">6</div>
-                                    <label for="nome" style="display: block">Qual os os bares/restaurantes você costuma
+                                    <label for="nome" style="display: block">Quais os bares/restaurantes você costuma
                                         frequentar?</label>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="casa">
+                                    <input class="form-check-input" type="radio" name="proximidade" value="casa" required>
                                     <span class="form-check-label"> Próximo de casa </span>
                                     <input class="form-check-input" type="radio" name="proximidade" value="trabalho">
                                     <span class="form-check-label"> Próximo do trabalho </span>
@@ -141,34 +141,34 @@
                                 </div>
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">7</div>
-                                    <label for="nome" style="display: block">Quantas vez em média você sai para bares e
-                                        restaurante por mês?</label>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
-                                    <span class="form-check-label"> 1 por mês </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
-                                    <span class="form-check-label"> 2 pos mês </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="3">
-                                    <span class="form-check-label"> 3 por mês </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
-                                    <span class="form-check-label"> mais de 3 por mês </span>
+                                    <label for="nome" style="display: block">Quantas vezes em média você sai para bares e
+                                        restaurantes por mês?</label>
+                                    <input class="form-check-input" type="radio" name="frequencia_bares" value="1" required>
+                                    <span class="form-check-label"> 1 vez </span>
+                                    <input class="form-check-input" type="radio" name="frequencia_bares" value="2">
+                                    <span class="form-check-label"> 2 vezes </span>
+                                    <input class="form-check-input" type="radio" name="frequencia_bares" value="3">
+                                    <span class="form-check-label"> 3 vezes </span>
+                                    <input class="form-check-input" type="radio" name="frequencia_bares" value="3_plus">
+                                    <span class="form-check-label"> mais de 3  </span>
                                 </div>
 
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">8</div>
                                     <label for="nome" style="display: block">Qual a forma de pagamento mais
                                         utilizada?</label>
-                                    <input class="form-check-input" type="radio" name="pagamento" value="dinheiro">
-                                    <span class="form-check-label"> dinheiro </span>
+                                    <input class="form-check-input" type="radio" name="pagamento" value="dinheiro" required>
+                                    <span class="form-check-label"> Dinheiro </span>
                                     <input class="form-check-input" type="radio" name="pagamento" value="credito">
-                                    <span class="form-check-label"> crédito </span>
+                                    <span class="form-check-label"> Crédito </span>
                                     <input class="form-check-input" type="radio" name="pagamento" value="debito">
-                                    <span class="form-check-label"> débito </span>
+                                    <span class="form-check-label"> Débito </span>
                                 </div>
 
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">9</div>
                                     <label for="nome" style="display: block">Qual o valor médio gasto por local?</label>
-                                    <input class="form-check-input" type="radio" name="gasto" value="">
+                                    <input class="form-check-input" type="radio" name="gasto" value="ate_80" required>
                                     <span class="form-check-label"> 50,00 à 80,00 </span>
                                     <input class="form-check-input" type="radio" name="gasto" value="ate_100">
                                     <span class="form-check-label"> 80,00 à 100,00 </span>
@@ -180,64 +180,64 @@
                                     <div class="label-box">10</div>
                                     <label for="nome" style="display: block">Como você faz compras pela
                                         internet?</label>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="casa">
-                                    <span class="form-check-label"> celular </span>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="trabalho">
-                                    <span class="form-check-label"> tablet </span>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="ambos">
-                                    <span class="form-check-label"> computador </span>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
-                                    <span class="form-check-label"> ambos </span>
-                                    <input class="form-check-input" type="radio" name="proximidade" value="Indiferente">
-                                    <span class="form-check-label"> nenhum </span>
+                                    <input class="form-check-input" type="radio" name="internet" value="celular" required>
+                                    <span class="form-check-label"> Celular </span>
+                                    <input class="form-check-input" type="radio" name="internet" value="Tablet">
+                                    <span class="form-check-label"> Tablet </span>
+                                    <input class="form-check-input" type="radio" name="internet" value="Computador">
+                                    <span class="form-check-label"> Computador </span>
+                                    <input class="form-check-input" type="radio" name="internet" value="ambos">
+                                    <span class="form-check-label"> Ambos </span>
+                                    <input class="form-check-input" type="radio" name="internet" value="Indiferente">
+                                    <span class="form-check-label"> Nenhum </span>
                                 </div>
 
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">11</div>
                                     <label for="nome" style="display: block">Qual a vantagem de utilizar o celular para
                                         realizar compras?</label>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
-                                    <span class="form-check-label"> confiança </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
-                                    <span class="form-check-label"> praticidade </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="3">
-                                    <span class="form-check-label"> acessível </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="3_plus">
-                                    <span class="form-check-label"> nenhum </span>
+                                    <input class="form-check-input" type="radio" name="vantagens" value="cofianca" required>
+                                    <span class="form-check-label"> Confiança </span>
+                                    <input class="form-check-input" type="radio" name="vantagens" value="praticidade">
+                                    <span class="form-check-label"> Praticidade </span>
+                                    <input class="form-check-input" type="radio" name="vantagens" value="acessivel">
+                                    <span class="form-check-label"> Acessível </span>
+                                    <input class="form-check-input" type="radio" name="vantagens" value="nenhum">
+                                    <span class="form-check-label"> Nenhum </span>
                                 </div>
 
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">12</div>
                                     <label for="nome" style="display: block">Do bar/restaurante para o celular, o que
                                         seria legal?</label>
-                                    <input class="form-check-input" type="checkbox" name="proximidade" value="casa">
-                                    <span class="form-check-label"> fazer pedido </span>
-                                    <input class="form-check-input" type="checkbox" name="proximidade" value="trabalho">
-                                    <span class="form-check-label"> consultar cardápio </span>
-                                    <input class="form-check-input input-radio" type="checkbox" name="proximidade"
-                                        value="ambos">
-                                    <span class="form-check-label"> consultar e pagar conta </span><br>
-                                    <input class="form-check-input" type="checkbox" name="proximidade"
-                                        value="Indiferente">
-                                    <span class="form-check-label"> atrações/eventos </span>
-                                    <input class="form-check-input" type="checkbox" name="proximidade"
-                                        value="Indiferente">
-                                    <span class="form-check-label"> fotos estabelicimento </span>
+                                    <input class="form-check-input" type="checkbox" name="sugestao[]" value="faz_pedido">
+                                    <span class="form-check-label"> Fazer pedido </span>
+                                    <input class="form-check-input" type="checkbox" name="sugestao[]" value="consulta_cardapio">
+                                    <span class="form-check-label"> Consultar cardápio </span>
+                                    <input class="form-check-input input-radio" type="checkbox" name="sugestao[]"
+                                        value="consulta_paga">
+                                    <span class="form-check-label"> Consultar e pagar conta </span><br>
+                                    <input class="form-check-input" type="checkbox" name="sugestao[]"
+                                        value="atracoes_evento">
+                                    <span class="form-check-label"> Atrações/eventos </span>
+                                    <input class="form-check-input" type="checkbox" name="sugestao[]"
+                                        value="fotos_estabelecimento">
+                                    <span class="form-check-label"> Fotos estabelicimento </span>
                                 </div>
 
                                 <div class="form-input col-md-6 col-xs-12" style="margin-top:50px">
                                     <div class="label-box">13</div>
                                     <label for="nome" style="display: block">Você utilizaria um app que ajudasse a
                                         melhorar sua experiência num bar ou restaurante?</label>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="1">
+                                    <input class="form-check-input" type="radio" name="app" value="1" required>
                                     <span class="form-check-label"> sim </span>
-                                    <input class="form-check-input" type="radio" name="frequencia" value="2">
+                                    <input class="form-check-input" type="radio" name="app" value="2">
                                     <span class="form-check-label"> não </span>
 
                                 </div>
                             </div>
                             <div class="space-30"></div>
-                            <button type="submit" class="bttn-default">ENVIAR</button>
+                            <button type="submit" class="bttn-default" id="checkBtn">ENVIAR</button>
                             <div class="space-30"></div>
                             <div class="space-30"></div>
                         </form>
@@ -254,7 +254,7 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <span>Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved</span>
+                        </script> 2019 barest</span>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <div class="space-30 hidden visible-xs"></div>
                 </div>
@@ -307,6 +307,41 @@
         navbarCollapse();
         // Collapse the navbar when page is scrolled
         $(window).scroll(navbarCollapse);
+    </script>
+
+<script type="text/javascript">
+    $('#checkBtn').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
+      if(!checked) {
+        alert("Verifique se foi preenchido todos os campos do formulário. ");
+        return false;
+      }
+
+    });
+    $(document).ready(function() {        
+        $('#form_pesquisa').submit(function(e) {
+            e.preventDefault();
+            var serializeDados = $('#form_pesquisa').serialize();
+             
+            $.ajax({
+                url: 'cadPesquisa.php',
+                dataType: 'html',
+                type: 'POST',
+                data: serializeDados,              
+                success: function(data, textStatus) {
+                    alert("Agradecemos a sua ajuda!");
+                    window.location.href = "https://barest.com.br";
+                },
+                error: function(xhr,er) {
+                    alert("Ops, algo deu errado. Tente outra vez!");
+                }
+            });     
+             
+        });
+
+        
+    })
+     
     </script>
 
 </body>
